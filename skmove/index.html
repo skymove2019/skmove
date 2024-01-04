@@ -400,16 +400,9 @@
         </span>
 </footer>
 
-<!-- Event snippet for โทรเบอร์ conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  return false;
+    window.location = url;
 }
 
 function showall(){
@@ -418,17 +411,9 @@ function showall(){
 }
 </script>
 
-<!-- Event snippet for กด ไลน์ conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversionline(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  
-  return false;
+    window.location = url;
 }
 </script>
 
